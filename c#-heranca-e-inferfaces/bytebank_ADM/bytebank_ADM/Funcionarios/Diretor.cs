@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace bytebank_ADM.Funcionarios
 {
-    public class Funcionario
+    public class Diretor
     {
-        public Funcionario(string nome, string cpf, double salario)
+        public Diretor (string nome, string cpf, double salario)
         {
             Nome = nome;
             Cpf = cpf;
@@ -18,7 +18,6 @@ namespace bytebank_ADM.Funcionarios
         public string Nome { get; set; }
         public string Cpf { get; set; }
         public double Salario { get; set; }
-        //public int Funcao { get; set; }
-        public double Bonificacao { get => Salario * 0.1; }
+        public double Bonificacao { get => Salario; }
     }
 }
